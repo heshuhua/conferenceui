@@ -1,0 +1,25 @@
+<div ng-controller="RoomCtrl as roomCtrl">
+
+    <table class="table table-bordered">
+         <thead>
+    <tr>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Contain_Num</td>
+        <td>Phone_Num</td>
+        <td>Room_desc</td>
+        </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="room in roomCtrl.rooms">
+    <td>{{ room.name }}</td>
+    <td>{{ room.address }}</td>
+        <td>{{ room.people_num }}</td>
+        <td>{{ room.phone_number }}</td>
+        <td>{{ room.room_desc }}</td>
+        </tr>
+    </tbody>
+    </table>
+
+</div>
+<p>This is the partial for Room.</p>
